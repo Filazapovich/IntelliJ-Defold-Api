@@ -1,5 +1,6 @@
 {
   "info": {
+    "group": "COMPONENTS", 
     "description": "<p>Functions to manipulate a label component.</p>", 
     "namespace": "label", 
     "name": "Label", 

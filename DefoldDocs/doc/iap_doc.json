@@ -1,5 +1,6 @@
 {
   "info": {
+    "group": "EXTENSIONS", 
     "description": "<p>Functions and constants for interacting with Apple's In-app purchases\nand Google's In-app billing.</p>", 
     "namespace": "iap", 
     "name": "In-app purchases", 

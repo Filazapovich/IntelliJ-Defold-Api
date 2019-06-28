@@ -79,12 +79,14 @@ function sound.is_music_playing() end
 ---this function always return false.
 ---@return boolean 
 function sound.is_phone_call_active() end
----Make the sound component play its sound. Multiple voices is supported. The limit is set to 32 voices per sound component.
+---Make the sound component play its sound. Multiple voices are supported. The limit is set to 32 voices per sound component.
 ---
 --- Note that gain is in linear scale, between 0 and 1.
 ---To get the dB value from the gain, use the formula 20 * log(gain).
 ---Inversely, to find the linear value from a dB value, use the formula
 ---10db/20.
+---
+--- A sound will continue to play even if the game object the sound component belonged to is deleted. You can call sound.stop() to stop the sound.
 ---@param url string | hash | url the sound that should play
 ---@param play_properties table optional table with properties:
 function sound.play(url, play_properties) end

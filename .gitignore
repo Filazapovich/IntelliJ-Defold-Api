@@ -53,3 +53,7 @@ fabric.properties
 
 
 build/
+.classpath
+.project
+.gradle
+.vscode

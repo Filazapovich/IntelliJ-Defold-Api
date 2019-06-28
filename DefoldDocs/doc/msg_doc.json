@@ -1,5 +1,6 @@
 {
   "info": {
+    "group": "SCRIPT", 
     "description": "<p>Functions for passing messages and constructing URL objects.</p>", 
     "namespace": "msg", 
     "name": "Message", 

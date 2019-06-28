@@ -60,7 +60,7 @@ function sys.get_sys_info() end
 function sys.load(filename) end
 ---Loads a custom resource. Specify the full filename of the resource that you want
 ---to load. When loaded, the file data is returned as a string.
----If loading fails, the function returns nil.
+---If loading fails, the function returns nil plus the error message.
 ---
 ---In order for the engine to include custom resources in the build process, you need
 ---to specify them in the "custom_resources" key in your "game.project" settings file.
@@ -70,7 +70,8 @@ function sys.load(filename) end
 ---
 ---For example "main/data/,assets/level_data.json".
 ---@param filename string resource to load, full path
----@return string loaded data, or nil if the resource could not be loaded
+---@return string loaded data, or 
+---@return string the error message, or 
 function sys.load_resource(filename) end
 ---Open URL in default application, typically a browser
 ---@param url string url to open
