@@ -1,0 +1,17 @@
+--- @class iap.transaction
+--- @field ident string The product identifier.
+--- @field state any The transaction state. See iap.TRANS_STATE_*.
+--- @field date string The date and time for the transaction.
+--- @field trans_ident string The transaction identifier. This field is only set when state is iap.TRANS_STATE_RESTORED, iap.TRANS_STATE_UNVERIFIED or iap.TRANS_STATE_PURCHASED.
+--- @field receipt string The transaction receipt. This field is only set when state is iap.TRANS_STATE_PURCHASED or iap.TRANS_STATE_UNVERIFIED.
+--- @field original_trans any Apple only. The original transaction. This field is only set when state is TRANS_STATE_RESTORED.
+--- @field signature string Google Play only. A string containing the signature of the purchase data that was signed with the private key of the developer.
+--- @field request_id string Facebook only. This field is set to the optional custom unique request id request_id if set in the iap.buy() call parameters.
+--- @field purchase_token string Facebook Gameroom only. The purchase token.
+--- @field currency any Facebook Gameroom only. The currency used for the purchase.
+--- @field amount number Facebook Gameroom only. The amount the player will be charged for a single unit of this product.
+--- @field quantity number Facebook Gameroom only. The quantity of this item the user is purchasing.
+--- @field user_id string Amazon Pay only. The user ID.
+--- @field is_sandbox_mode bool Amazon Pay only. If true, the SDK is running in Sandbox mode. This only allows interactions with the Amazon AppTester. Use this mode only for testing locally.
+--- @field cancel_date string Amazon Pay only. The cancel date for the purchase. This field is only set if the purchase is canceled.
+--- @field canceled bool Amazon Pay only. Is set to true if the receipt was canceled or has expired; otherwise false.
